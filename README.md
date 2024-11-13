@@ -1,7 +1,4 @@
 # JavaScrpit 기초 실습하기 : StopWatch & Timer
-## 프로젝트 기간
-- Start : 2024.11.05 ~
-
 ## author : PARK INJUNG
 
 ## 프로젝트 파일 구성
