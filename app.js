@@ -2,6 +2,9 @@ const addTrailingZero = (number) => {
   return number < 10 ? `0${number}` : number;
 };
 
+/**
+ * Clock = Timer
+ */
 const updateTime = () => {
   // 함수명이 명사나 형용사로 끝내기
   // 값이 고정되기 때문에 const를 사용함
@@ -41,3 +44,38 @@ const updateTime = () => {
 
 updateTime();
 setInterval(updateTime, 1000); // 시간을 매일 초단위로 업데이트( 1000은 1초 )
+
+/**
+ * StopWatch
+ */
+let stopWatchHour = 0,
+  stopWatchMinutes = 0,
+  stopWatchSecond = 0,
+  stopWatchMillisecond = 0,
+  stopWatchRunning = false,
+  laps = 0,
+  StopWatchInterval;
+
+const stopwatch = () => {
+  stopWatchMillisecond++;
+
+  if (stopWatchMillisecond === 100) {
+    stopWatchSecond++;
+    stopWatchMillisecond = 0;
+  }
+
+  if (stopWatchSecond === 60) {
+    stopWatchMinutes++;
+    stopWatchSecond = 0;
+  }
+
+  if (stopWatchMinutes === 60) {
+    stopWatchHour++;
+    stopWatchMinutes = 0;
+  }
+
+  $("#stopWatch-hour").html(addTrailingZero(stopWatchHour));
+  $("#stopWatch-min").html(addTrailingZero(stopWatchMinutes));
+  $("#stopWatch-sec").html(addTrailingZero(stopWatchSecond));
+  $("#stopWatch-ms").html(addTrailingZero(stopWatchMillisecond));
+};

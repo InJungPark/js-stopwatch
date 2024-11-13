@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -14,7 +14,8 @@
         <p class="type">Time</p>
       </div>
       <div class="main-wrapper">
-        <div class="clock">
+        <!-- Clock = Timer -->
+        <div class="clock hidden">
           <div class="wrapper">
             <div class="main">
               <div class="hour">
@@ -43,13 +44,75 @@
             <button class="btn" id="timer-btn">Timer</button>
           </div>
         </div>
+        <!-- StopWatch -->
+        <div class="stopwath">
+          <div class="wrapper">
+            <div class="main">
+              <div class="hour">
+                <p class="number" id="stopWatch-hour">00</p>
+                <p>hour</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="min">
+                <p class="number" id="stopWatch-min">00</p>
+                <p>minutes</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="sec">
+                <p class="number" id="stopWatch-sec">00</p>
+                <p>seconds</p>
+              </div>
+              <p class="colon">:</p>
+              <div class="millisecond">
+                <p class="number" id="stopWatch-ms">00</p>
+                <p>millisecond</p>
+              </div>
+            </div>
+          </div>
+          <!-- <div class="laps">
+            <div class="lap active">
+              <p>lap 1</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 2</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 3</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 1</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 1</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 1</p>
+              <p>00:00</p>
+            </div>
+            <div class="lap active">
+              <p>lap 1</p>
+              <p>00:00</p>
+            </div>
+          </div> -->
+          <div class="btns">
+            <button class="btn start-stopwatch">START</button>
+            <button class="btn lap-stopwatch hidden">LAP</button>
+            <button class="btn reset-stopwatch">RESET</button>
+            <button class="btn back-btn">BACK</button>
+          </div>
+        </div>
       </div>
     </div>
     <script
-    src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
-    integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
-    crossorigin="anonymous"
-  ></script>
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.3/jquery.min.js"
+      integrity="sha512-STof4xm1wgkfm7heWqFJVn58Hm3EtS31XFaagaa8VMReCXAkQnJZ+jEy8PCC/iT18dFy95WcExNHFTqLyp72eQ=="
+      crossorigin="anonymous"
+    ></script>
     <script src="app.js"></script>
   </body>
 </html>
