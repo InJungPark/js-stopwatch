@@ -1,7 +1,7 @@
 # JavaScrpit 기초 실습하기 : StopWatch & Timer
 ## author : PARK INJUNG
 
-## 프로젝트 파일 구성
+## 파일 구성
 ### 폴더 생성
 - 해당 project 폴더 만들기
 
