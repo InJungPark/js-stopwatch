@@ -1,5 +1,5 @@
 # JavaScrpit 기초 실습하기 : StopWatch & Timer
-이 리포지토리는 JavaScript를 사용하여 스톱워치 기능을 구현하는 간단한 예제입니다.
+이 리포지토리는 JavaScript를 사용하여 스톱워치 기능을 구현하는 간단한 예제입니다.<br>
 DOM 조작과 이벤트 핸들링을 학습하며 JavaScript 기초를 익힐 수 있습니다.
 ## 🎯 목적
 - JavaScript 기초 학습 : DOM 조작 및 이벤트 핸들링을 통해 JavaScript의 기본 개념 학습
